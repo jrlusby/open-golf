@@ -1,0 +1,22 @@
+- So I already have the gps information. Thats good.
+
+- Get live gps information, check it for accuracy, try to overlay it on a map
+  if thats not too time consuming.
+  * Implement requestUpdates for gps, do away with this gps listener class or
+  * w/e I found online, use the google location API directly. Needless
+  * abstraction is needless. imo. I may be wrong
+
+- figure out how to store it in a sqllite db or w/e they use in android phones
+- make sure the db file is very easy to find and download / modify
+- add an indicator of accuracy of gps reading, yards of error would be best imo
+- add a bunch of buttons for different clubs. Click a button start a shot.
+- need to be wary of units, looks like android gps defaults to meters,
+  therefore it would be best to always work in meters and convert to yards only
+  when displaying to users, if they want to see yards.
+- We can make assumptions on the timing of when we should turn gps on and off
+  when the user hits a club, for example a driver is a long shot and you can
+  probably turn off the gps immediately after marking it. Possibly set up this
+  as something called "Aggressive battery saving mode"
+- Can also ask the player before each round if they're going to be in a cart or
+  walking, this information can be used to estimate maximum expected speed
+  which can be used to determine if a new location reading is possible or not.
