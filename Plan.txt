@@ -7,7 +7,10 @@
   * abstraction is needless. imo. I may be wrong
 
 - figure out how to store it in a sqllite db or w/e they use in android phones
-- make sure the db file is very easy to find and download / modify
+- make sure the db file is very easy to find and download / modify so that
+  users can export all their swing information and query it how they see fit,
+  do custom statistical analysis and shit, I bet this will be a feature some
+  golf instructors would love
 - add an indicator of accuracy of gps reading, yards of error would be best imo
 - add a bunch of buttons for different clubs. Click a button start a shot.
 - need to be wary of units, looks like android gps defaults to meters,
